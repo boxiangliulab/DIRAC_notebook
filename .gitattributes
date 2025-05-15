@@ -1,0 +1,2 @@
+Vertical/sp_multi_omics_final/ filter=lfs diff=lfs merge=lfs -text
+Vertical/sp_multi_omics_final/** filter=lfs diff=lfs merge=lfs -text

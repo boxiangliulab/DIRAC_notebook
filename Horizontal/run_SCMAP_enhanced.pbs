@@ -1,0 +1,13 @@
+#!/bin/bash
+#PBS -q normal 
+#PBS -l select=1:ncpus=32:mem=500g
+#PBS -l walltime=23:59:59
+#PBS -N batch_ID
+#PBS -o batch_ID.o 
+#PBS -e batch_ID.e
+#PBS -P 11003054
+
+source activate /home/project/11003054/changxu/Conda_envs/r-env
+cd /home/project/11003054/changxu/Projects/DIRAC/Section-4
+
+Rscript run_SCMAP_enhanced.r
